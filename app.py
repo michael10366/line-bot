@@ -37,12 +37,18 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
+
     msg = event.message.text
     reply = 'Damn~~~~'
-    if msg == "hi":
+    if msg == ['hi', 'Hi']:
         reply = 'fuck'
     elif '吃飯' in msg:
         reply = '賈霸阿'
+    elif ['幹', '乾'] in msg:
+        reply = 'watch your mouth!'
+
+
+
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text= reply))
