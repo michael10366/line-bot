@@ -55,7 +55,7 @@ def handle_message(event):
         reply = 'fuck'
     elif '吃飯' in msg:
         reply = '賈霸阿'
-    elif ['幹', '乾'] in msg:
+    elif '幹' in msg:
         reply = 'watch your mouth!'
 
 
