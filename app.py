@@ -52,7 +52,7 @@ def handle_message(event):
 
 
     reply = 'Damn~~~~'
-    if msg == ['hi', 'Hi']:
+    if msg == 'hi':
         reply = 'fuck'
     elif '吃飯' in msg:
         reply = '賈霸阿'
